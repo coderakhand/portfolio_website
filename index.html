@@ -19,15 +19,37 @@
         box-sizing: border-box;
       }
 
+      html {
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+      }
+
+      /* backgrounnd image of header/navigation bar */
       .mainheader {
         background: url(bannerimage.jpeg) no-repeat center center/cover;
         height: 400px;
       }
 
+      /* navigation bar css */
       .navigation-bar {
         display: flex;
       }
 
+      .ab:hover {
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+      }
+
+      .ab {
+        color: black;
+        margin: 20px 40px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 100;
+        transition: all ease 0.4s;
+      }
+
+      /* css for my image as a character */
       .my-image {
         margin-top: 40px;
         height: 300px;
@@ -35,11 +57,12 @@
         float: right;
         transition: all ease 0.6s;
       }
-      
+
       .my-image:hover {
         transform: scale(1.27);
       }
 
+      /* my introduction */
       .intro-container {
         margin: 120px 0 0 60px;
       }
@@ -69,27 +92,9 @@
 
       }*/
 
-      .ab:hover {
-        background-color: black;
-        color: white;
-        border-radius: 4px;
-      }
-
-      .ab {
-        color: black;
-        margin: 20px 40px;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 100;
-        transition: all ease 0.4s;
-      }
-
+      /* css for body/footer */
       body {
         background-size: auto;
-      }
-
-      html {
-        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
       }
 
       p {
