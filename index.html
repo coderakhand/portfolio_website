@@ -6,7 +6,7 @@
     <!-- link of Font Awesome Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
     <!-- link of Google Font used -->
@@ -45,21 +45,29 @@
       <p class="contact-me-on">Contact Me On</p>
       <div class="social-media-icons">
         <a
-          class="fa fa-instagram"
-          href="https://www.instagram.com/akhandofficial/"
-          target="_blank"
-        ></a>
-        <a
-          class="fa fa-linkedin"
+          class="fa-brands fa-linkedin fa-bounce"
+          id="linkedin"
+          onmouseover="removebounce_linkedin()"
           href="https://www.linkedin.com/in/akhand-pratap-singh-a0096628b/"
           target="_blank"
         ></a>
         <a
-          class="fa fa-facebook"
+          class="fa-brands fa-instagram fa-flip"
+          id="instagram"
+          onmouseover="removeflip()"
+          href="https://www.instagram.com/akhandofficial/"
+          target="_blank"
+        ></a>
+        
+        <a
+          class="fa-brands fa-facebook fa-bounce"
+          id="facebook"
+          onmouseover="removebounce_facebook()"
           href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100060072315595"
           target="_blank"
         ></a>
       </div>
+      <script src="index.js"></script>
     </main>
   </body>
 </html>
