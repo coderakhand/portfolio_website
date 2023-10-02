@@ -1,3 +1,4 @@
+/* I WILL KEEP ON ADDING/CHANGING COMMENTS UNTIL I AM NOT SATISFIED WITH THEM*/
 /* Setting up margin for each element to zero so we can adjust it later for specific element */
 /* Setting up border-box for making easy to deal with size of layout elements*/
 * {
@@ -8,6 +9,101 @@
 /* Linear gradient is giving progressive transition to all the background-colors at 0.25turn  */
 html {
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+/* Creating all the animation and giving them certain class to make it easy to use wherever we want  */
+/* This animation makes the content bounce on entrance in web page*/
+.bounce {
+  animation: bounce-top 1s both 1.2s;
+}
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+/* This animation allows the content to slide in from right while entering the webpage */
+.slide-in-right {
+  animation: slide-in-from-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* This animation allows the content to slide in from right while entering the webpage */
+.slide-in-left {
+  animation: slide-in-from-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slide-in-left-late{
+  animation: slide-in-from-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+}
+.slide-in-left-too-late{
+  animation: slide-in-from-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+}
+@keyframes slide-in-from-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* This animation changes the color of text from transparent to black with a permanent stroke on text */
+.blinking {
+  animation: blinking-text 1.5s ease 1s infinite alternate-reverse;
+}
+@keyframes blinking-text {
+  from {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+  }
+  to {
+    -webkit-text-stroke: 1px black;
+    color: black;
+  }
 }
 
 /* Adding a background image in header */
@@ -68,23 +164,10 @@ html {
   margin: 120px 0 0 60px;
 }
 
-/* Creating an animation with name into-animation which changes the color of text from transparent to black with a permanent stroke on text */
-@keyframes intro-animation {
-  from {
-    -webkit-text-stroke: 1px black;
-    color: transparent;
-  }
-  to {
-    -webkit-text-stroke: 1px black;
-    color: black;
-  }
-}
-
 /* Adjusting font of introduction text and also applying animation to it */
 .hi {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 40px;
-  animation: intro-animation 1.5s ease 0s infinite alternate-reverse;
 }
 
 /* Styling p tag in main */
