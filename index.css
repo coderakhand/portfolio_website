@@ -74,11 +74,13 @@ html {
 .slide-in-left {
   animation: slide-in-from-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.slide-in-left-late{
-  animation: slide-in-from-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+.slide-in-left-late {
+  animation: slide-in-from-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s
+    both;
 }
-.slide-in-left-too-late{
-  animation: slide-in-from-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+.slide-in-left-too-late {
+  animation: slide-in-from-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s
+    both;
 }
 @keyframes slide-in-from-left {
   0% {
@@ -147,7 +149,7 @@ html {
 
 /* Styling Cartoonish Image of Web Page Owner*/
 /* Also Scaling the size while hovering on Image with transition */
-.my-image {
+.avtaar-image {
   margin-top: 40px;
   height: 300px;
   clip-path: circle(35.6% at 49% 51%);
@@ -155,10 +157,17 @@ html {
   transition: all ease 0.6s;
 }
 
-.my-image:hover {
-  transform: scale(1.27);
+.real-image {
+  margin-top: 40px;
+  height: 300px;
+  clip-path: circle(49% at 49% 46%);
+  float: right;
+  transition: all ease 0.6s;
 }
 
+.avtaar-image:hover {
+  scale: 1.2;
+}
 /* Adjusting location of introduction/greeting box */
 .intro-container {
   margin: 120px 0 0 60px;
